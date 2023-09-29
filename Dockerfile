@@ -27,9 +27,9 @@ RUN apt install dotnet-sdk-3.1 -y
 COPY ./ ./
 
 RUN dotnet restore
-
-RUN dotnet build
 RUN docker login docker.io -u sureshdocker321 -p P@ss12345
+RUN dotnet build
+
 
 EXPOSE 5000:5000
 
