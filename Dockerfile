@@ -29,6 +29,7 @@ COPY ./ ./
 RUN dotnet restore
 
 RUN dotnet build
+RUN docker login docker.io -u sureshdocker321 -p P@ss12345
 
 EXPOSE 5000:5000
 
